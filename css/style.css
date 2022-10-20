@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #f1f1f1;
+  --secondary: #282828;
+  --effect: #ffa500;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  font-family: "Supreme", sans-serif;
+}
+
+header {
+  font-size: 1.5rem;
+  padding: 2rem 4rem;
+  background: url("/img/construction-plans.webp") fixed no-repeat bottom;
+  background-size: cover;
+}
+
+header > nav {
+  display: flex;
+  padding: 1rem 4rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Kola", sans-serif;
+  background: var(--secondary);
+  color: var(--primary);
+}
+
+.nav-brand {
+  color: var(--effect);
+}
+
+.nav-links {
+  display: inherit;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-links > a {
+  color: var(--primary);
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.nav-links > a:hover {
+  color: var(--effect);
+  border-block-end: 1px solid;
+}
+
+.nav-links button {
+  border: none;
+  font-size: 1.5rem;
+  color: var(--primary);
+  background: transparent;
+  font-family: "Kola", sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-links button:hover {
+  color: var(--effect);
+}
+
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+  border-block-end: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.nav-dropdown:hover {
+  border-block-end: 1px solid var(--effect);
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  color: var(--primary);
+  background: var(--secondary);
+  padding: 0.5rem;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-dropdown-content > a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-dropdown-content > a:hover {
+  color: orange;
+}

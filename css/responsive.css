@@ -81,9 +81,18 @@
     display: flex;
     justify-content: center;
   }
+
+  .contained {
+    backdrop-filter: none;
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 450px) {
+  header {
+    padding: 1.5rem;
+  }
+
   footer > article {
     display: grid;
     color: var(--primary);

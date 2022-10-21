@@ -111,7 +111,7 @@ header > nav {
   padding: 0 6rem;
 }
 
-.hero > .container {
+.container {
   display: inherit;
   flex-direction: column;
   justify-content: space-evenly;

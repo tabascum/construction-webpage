@@ -33,6 +33,7 @@ header > nav {
 .nav-links {
   display: inherit;
   gap: 1rem;
+  border-radius: 0.5rem;
 }
 
 .nav-links > a {
@@ -77,6 +78,7 @@ header > nav {
   display: none;
   position: absolute;
   flex-direction: column;
+  border-radius: 0.5rem;
   color: var(--primary);
   background: var(--secondary);
   box-shadow: 0.2rem.2rem 0.4rem var(--secondary);

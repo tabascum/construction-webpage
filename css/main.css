@@ -39,11 +39,12 @@ main > article {
 /* footer */
 
 footer > article {
+  font-size: 1rem;
   display: grid;
   color: var(--primary);
   padding: 1rem 4rem;
   grid-template-columns: repeat(2, auto);
-  background: var(--dark);
+  background: var(--secondary);
   justify-content: space-around;
   gap: 1rem;
 }
@@ -62,4 +63,80 @@ footer .navigation,
 .info-legal {
   display: flex;
   flex-direction: column;
+}
+
+/* additional pages */
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.contained {
+  display: inherit;
+  justify-content: space-evenly;
+  padding: 2rem;
+  text-align: start;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(0.9rem);
+  box-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);
+}
+
+.contain-card div {
+  font-size: 1rem;
+  text-align: start;
+  margin: 1rem 0;
+}
+
+.contain-card h2 {
+  font-family: "Kola", sans-serif;
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);
+}
+
+.form {
+  display: inherit;
+  justify-content: center;
+  text-align: start;
+}
+
+form {
+  gap: 0.4rem;
+  padding: 2rem;
+  display: inherit;
+  text-align: start;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2rem);
+  border: 0.01rem solid var(--secondary);
+  box-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);
+}
+
+form .button {
+  margin-block-start: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-field {
+  display: inherit;
+  flex-direction: column;
+  font-size: 1.3rem;
+  font-family: "Kola", sans-serif;
+}
+
+.form-field > input {
+  padding: 0 0.3rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  border: 0.1rem solid var(--secondary);
+}
+
+.form-field textarea {
+  padding: 0.4rem;
+  font-size: 1rem;
+  resize: none;
+  border: 0.1rem solid var(--secondary);
 }

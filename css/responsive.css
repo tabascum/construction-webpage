@@ -1,3 +1,12 @@
+@media (max-width: 1230px) {
+  .contained {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 920px) {
   nav {
     position: relative;
@@ -36,8 +45,14 @@
     color: var(--primary);
     background: var(--secondary);
     box-shadow: 0.2rem.2rem 0.4rem var(--secondary);
-    padding: 1rem;
+    padding: 0.5rem;
+    top: 0;
+    transform: translateX(-12rem);
     z-index: 1;
+  }
+
+  .contain-card {
+    padding: 0;
   }
 }
 
@@ -48,6 +63,11 @@
 
   .hero {
     display: flex;
+    padding: 0;
+  }
+
+  .contain {
+    padding: 0;
   }
 
   .hero .buttons {
@@ -60,6 +80,10 @@
     min-height: 60vh;
     display: flex;
     justify-content: center;
+  }
+
+  .contained {
+    backdrop: none;
   }
 }
 

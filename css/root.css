@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #f1f1f1;
+  --secondary: #282828;
+  --effect: #ffa500;
+  --dark: #030104;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  font-family: "Supreme", sans-serif;
+  font-size: 1.15rem;
+}

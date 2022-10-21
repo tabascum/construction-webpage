@@ -3,7 +3,15 @@
 const servicesBtn = document.querySelector(".nav-dropbtn");
 const services = document.querySelector(".nav-dropdown-content");
 
-servicesBtn.addEventListener("click", () => {
-  services.setAttribute;
-  services.classList.toggle("nav-dropdown-content.active");
-});
+servicesBtn.onclick = () => {
+  services.classList.toggle("active");
+};
+
+/* dropdown on small screens */
+
+const toggle = document.querySelector(".nav-toggle-button");
+const navbarLinks = document.querySelector(".nav-links");
+
+toggle.onclick = () => {
+  navbarLinks.classList.toggle("active");
+};

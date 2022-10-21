@@ -1,25 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="FR-fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/img/site.webmanifest">
     <!-- Fonts -->
     <link href="https://api.fontshare.com/v2/css?f[]=supreme@400,401,300,500&f[]=kola@400&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <!-- JS page behaviour-->
     <script src="/js/index.js" defer></script>
-    <title>Carroussel Business Page</title>
+    <title>A2F Construction | Rénovation</title>
 </head>
 
 <body>
+    <!-- header section -->
     <header>
         <nav>
             <div class="nav-brand">
                 <h1>A2F</h1>
+                <p>Construction | Rénovation</p>
+                <a href="#" class="nav-toggle-button">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
             <div class="nav-links">
                 <a href="">Accueil</a>
@@ -35,7 +52,71 @@
                 <a href="">Contact</a>
             </div>
         </nav>
+        <section class="hero">
+            <article class="container">
+                <div class="header">
+                    <h1>Solutions pour que vos rêves deviennent realité</h1>
+                    <div>
+                        <p>Nous réalisons tous les travaux de maçonnerie, carrelage, electricité, ainsi que des
+                            rénovations et touts les finissements</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <a href="" class="button">Savoir plus</a>
+                    <a href="" class="button alert">Contactez-nous</a>
+                </div>
+            </article>
+        </section>
     </header>
+    <!-- main content section -->
+    <section class="transition">
+        <h2>Nous sommes prêts pour vous aider avec les travaux dont vous avez besoin, dedans et dehors. </h2>
+        <a href="" class="button alert">Demander un budget</a>
+    </section>
+    <main>
+        <article>
+            <div class="presentation">
+                <h1>Bienvenue chez A2F</h1>
+                <p>
+                    Nous sommes une entreprise familial composée d'ouvriers professionnels : maçons, carreleurs,
+                    électriciens avec plus de 20 ans d'experience.
+                </p>
+                <p>
+                    Nous avons notre savoir-faire tout exposé à Roanne et au Roannais, aux batimênts publiques ainsi que
+                    chez
+                    nos clients particuliers.
+                </p>
+                <!--                 <p>
+                    Avez vous une piscine pour poser carrelage? Une cuisine, une chambre ou salle de bains à rénover?
+                    Des
+                    installations electriques pour faire?
+                </p> -->
+            </div>
+
+        </article>
+        <section>
+
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+        <article>
+            <div class="navigation">
+                <h2>Navigation</h2>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> Accueil</a>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> Services</a>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> Contact</a>
+            </div>
+            <div class="info-legal">
+                <h2>Informations légales</h2>
+                <p>&#169 <strong>A2F Construction | Rénovation</strong> 2022 Tous les droits reservés</p>
+                <p><i class="fa-solid fa-chevron-right"></i> Création de site internet <strong><a
+                            href="">tabascum</a></strong></p>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> Mentions légales</a>
+                <a href=""><i class="fa-solid fa-chevron-right"></i> Plan du site</a>
+            </div>
+        </article>
+    </footer>
 </body>
 
 </html>

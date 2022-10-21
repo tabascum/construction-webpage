@@ -1,0 +1,164 @@
+header {
+  font-size: 1.5rem;
+  padding: 2rem 4rem 5vw;
+  background: url("/img/construction-plans.webp") scroll no-repeat center;
+  background-size: cover;
+}
+
+header > nav {
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Kola", sans-serif;
+  background: var(--secondary);
+  color: var(--primary);
+  border-radius: 0.5rem;
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--dark);
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--dark);
+}
+
+.nav-brand {
+  display: inherit;
+  color: var(--effect);
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-brand > .nav-toggle-button {
+  color: var(--effect);
+  display: none;
+}
+
+.nav-links {
+  display: inherit;
+  gap: 1rem;
+}
+
+.nav-links > a {
+  color: var(--primary);
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.nav-links > a:hover {
+  color: var(--effect);
+  border-block-end: 1px solid;
+}
+
+.nav-links button {
+  border: none;
+  font-size: 1.5rem;
+  color: var(--primary);
+  background: transparent;
+  font-family: "Kola", sans-serif;
+  position: relative;
+  display: inline-block;
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--dark);
+}
+
+.nav-links button:hover {
+  color: var(--effect);
+}
+
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+  border-block-end: 1px solid transparent;
+  transition: 0.5s;
+}
+
+.nav-dropdown:hover {
+  border-block-end: 1px solid var(--effect);
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  color: var(--primary);
+  background: var(--secondary);
+  box-shadow: 0.2rem.2rem 0.4rem var(--secondary);
+  padding: 0.5rem;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.nav-dropdown-content.active {
+  display: block;
+}
+
+.nav-dropdown-content > a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-dropdown-content > a:hover {
+  color: var(--effect);
+}
+
+/* Hero section */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 4rem;
+  padding: 0 6rem;
+}
+
+.hero > .container {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(0.9rem);
+  box-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);
+}
+
+.hero > .container > .header {
+  font-size: 1.5rem;
+  color: var(--dark);
+  text-shadow: 0.2rem.2rem 0.4rem var(--secondary);
+}
+
+.hero .buttons {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button {
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 12rem;
+  text-align: center;
+  font-family: "Kola", sans-serif;
+  background: var(--secondary);
+  color: var(--primary);
+  box-shadow: 0.2rem.2rem 0.4rem var(--secondary);
+  border: 0.1rem solid transparent;
+}
+
+.button:hover {
+  color: var(--dark);
+  background: var(--effect);
+}
+
+.alert {
+  color: var(--dark);
+  background: var(--effect);
+}
+
+.alert:hover {
+  box-shadow: none;
+  background: var(--secondary);
+  color: var(--effect);
+  border: 0.1rem solid var(--effect);
+}

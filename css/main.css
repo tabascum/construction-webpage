@@ -16,7 +16,7 @@ main {
   flex-direction: column;
   background: var(--primary);
   grid-template-columns: repeat(2, 40%);
-  background: scroll no-repeat center url("../img/construction-plans.jpg");
+  background: fixed no-repeat center url("../img/construction-plans.jpg");
   background-size: cover;
   padding: 1rem 4rem;
   align-items: center;

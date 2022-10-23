@@ -2,7 +2,7 @@ header {
   font-size: 1.5rem;
   padding: 2rem 4rem 5vw;
   background: url("../img/image-of-engineering-objects-on-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg")
-    scroll no-repeat top;
+    fixed no-repeat top;
   background-size: cover;
 }
 
@@ -118,7 +118,7 @@ header > nav {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 4rem 2rem;
-  text-align: start;
+  text-align: center;
   border-radius: 0.5rem;
   backdrop-filter: blur(0.9rem);
   box-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);

@@ -44,7 +44,7 @@
                     <button class="nav-dropbtn">Services
                     </button>
                     <div class="nav-dropdown-content">
-                        <a href="services.html">Maçonnerie</a>
+                        <a href="#maconnerie" id="maconnerie-btn">Maçonnerie</a>
                         <a href="#carrelage" id="carrelage-btn">Carrelage</a>
                         <a href="#electricite" id="electricite-btn">Electricité</a>
                     </div>
@@ -52,46 +52,52 @@
                 <a href="contact.html">Contact</a>
             </div>
         </nav>
-        <section class="hero contain">
-            <div class="contain-card">
-                <h2>Contactez-nous</h2>
-                <h3>Nous sommes disponibles chez:</h3>
-            </div>
-            <article class="contained">
-                <div class="form">
-                    <form action="">
-                        <div class="form-field">
-                            <label for="name" id="name-label">nom</label>
-                            <input type="text" name="name" id="name" autocomplete="off">
-                        </div>
-                        <div class="form-field">
-                            <label for="telephone" id="telephone-label">téléphone</label>
-                            <input type="tel" name="telephone" id="telephone" autocomplete="off">
-                        </div>
-                        <div class="form-field">
-                            <label for="email" id="email-label">mail</label>
-                            <input type="email" name="email" id="email" autocomplete="off">
-                        </div>
-                        <div class="form-field">
-                            <label for="adress">adresse</label>
-                            <input type="text" name="adress" id="adress" autocomplete="off">
-                        </div>
-                        <div class="form-field">
-                            <label for="textarea">message</label>
-                            <textarea name="message" id="message" cols="25" rows="4" autocomplete="off"></textarea>
-                        </div>
-                        <div>
-                            <button class="button alert" id="send-btn">envoyer</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="contain">
-                    <h3>A2F SARL Construction | Rénovation </h3>
-                    <p>42120 Pérreux, France</p>
-                    <p><strong>Téléphone : </strong> XX XX XX XX XX</p>
-                    <p><strong>Email :</strong> general@a2f-construction.fr</p>
-                </div>
-            </article>
+
+        <!-- Services section -->
+        <section class="hero">
+            <span id="maconnerie" class="active">
+                <article class="contained contain">
+                    <div class="contain-card">
+                        <h2>Maçonnerie</h2>
+                        <p>
+                            On pose les murs dont vous avez besoin, soit dans un nouveau bâtiment, un nouveau mur pour
+                            votre
+                            jardin, ou une nouvelle pièce chez vous
+                        </p>
+                    </div>
+                    <div class="background-service-one">
+                        <img src="./img/young-craftsman-building-a-house.jpg" alt="">
+                    </div>
+                </article>
+            </span>
+            <span id="carrelage" class="hidden">
+                <article class="contained contain">
+                    <div class="contain-card">
+                        <h2>Carrelage</h2>
+                        <p>
+                            Soit de faïence, au sol ou mural, nos professionels ont l'experience et l'expertise pour
+                            installer, changer ou réparer votre carrelage de choix.
+                        </p>
+                    </div>
+                    <div class="background-service-two">
+                        <img src="./img/worker-puts-tiles.jpg" alt="">
+                    </div>
+                </article>
+            </span>
+            <span id="electricite" class="hidden">
+                <article class="contained contain">
+                    <div class="contain-card">
+                        <h2>Electricité</h2>
+                        <p>
+                            L'installation de la structure d'electricité neuve c'est aussi à nous, ainsi que les
+                            remplacements des installations existants
+                        </p>
+                    </div>
+                    <div class="background-service-three">
+                        <img src="./img/male-electrician-works-switchboard-with-electrical-connecting-cable.jpg" alt="">
+                    </div>
+                </article>
+            </span>
         </section>
     </header>
     <!-- footer section -->
@@ -113,7 +119,6 @@
             </div>
         </article>
     </footer>
-    <script src="https://smtpjs.com/v3/smtp.js">
     </script>
 </body>
 

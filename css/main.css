@@ -16,8 +16,7 @@ main {
   flex-direction: column;
   background: var(--primary);
   grid-template-columns: repeat(2, 40%);
-  background: scroll no-repeat center
-    url("../img/civil-engineer-and-construction-worker-manager-holding-digital-tablet-and-blueprints-talking-and-planing-about-construction-site-cooperation-teamwork-concept.webp");
+  background: scroll no-repeat center url("../img/construction-plans.jpg");
   background-size: cover;
   padding: 1rem 4rem;
   align-items: center;
@@ -32,7 +31,6 @@ main > article {
 }
 
 .presentation {
-  color: var(--dark);
   padding: 2rem;
 }
 
@@ -65,7 +63,7 @@ footer .navigation,
   flex-direction: column;
 }
 
-/* additional pages */
+/* additional styling */
 
 .contain {
   display: flex;
@@ -94,6 +92,32 @@ footer .navigation,
   font-family: "Kola", sans-serif;
   text-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);
 }
+
+/* services pages */
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.background-service-one {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.background-service-one img,
+.background-service-two img,
+.background-service-three img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  box-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);
+}
+
+/* contact form page */
 
 .form {
   display: inherit;

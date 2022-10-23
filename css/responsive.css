@@ -8,6 +8,10 @@
 }
 
 @media (max-width: 920px) {
+  .hero {
+    padding: 0 2rem;
+  }
+
   nav {
     position: relative;
   }
@@ -51,14 +55,29 @@
     z-index: 1;
   }
 
+  main {
+    grid-template-columns: repeat(2, 50%);
+  }
+
   .contain-card {
-    padding: 0;
+    padding: 1rem;
+  }
+
+  .contained {
+    box-shadow: none;
   }
 }
 
 @media (max-width: 610px) {
   .nav-brand p {
     display: none;
+  }
+
+  main {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
   }
 
   .hero {
@@ -75,17 +94,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  main {
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-  }
-
-  .contained {
-    backdrop-filter: none;
-    box-shadow: none;
-  }
 }
 
 @media (max-width: 450px) {
@@ -93,10 +101,22 @@
     padding: 1.5rem;
   }
 
+  main {
+    padding: 1rem;
+  }
+
+  .contained {
+    padding: 1rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+
   footer > article {
     display: grid;
     color: var(--primary);
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
     grid-template-columns: repeat(1, auto);
     justify-content: space-around;
     gap: 1rem;

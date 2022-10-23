@@ -16,14 +16,44 @@ toggle.onclick = () => {
   navbarLinks.classList.toggle("active");
 };
 
+/* services sections */
+
+const maconnerieBtn = document.getElementById("maconnerie-btn");
+const maconnerieSection = document.getElementById("maconnerie");
+const carrelageBtn = document.getElementById("carrelage-btn");
+const carrelageSection = document.getElementById("carrelage");
+const electriciteBtn = document.getElementById("electricite-btn");
+const electriciteSection = document.getElementById("electricite");
+
+maconnerieBtn.addEventListener("click", () => {
+  if ((maconnerieSection.classList = "active")) {
+    carrelageSection.classList = "hidden";
+    electriciteSection.classList = "hidden";
+  }
+});
+
+carrelageBtn.addEventListener("click", () => {
+  if ((carrelageSection.classList = "active")) {
+    maconnerieSection.classList = "hidden";
+    electriciteSection.classList = "hidden";
+  }
+});
+
+electriciteBtn.addEventListener("click", () => {
+  if ((electriciteSection.classList = "active")) {
+    carrelageSection.classList = "hidden";
+    maconnerieSection.classList = "hidden";
+  }
+});
+
 /* form validations */
 
-let userName = document.querySelector("#name");
-let nameLabel = document.querySelector("#name-label");
-let telephone = document.querySelector("#telephone");
-let telephoneLabel = document.querySelector("#telephone-label");
-let email = document.querySelector("#email");
-let emailLabel = document.querySelector("#email-label");
+const userName = document.getElementById("name");
+const nameLabel = document.querySelector("#name-label");
+const telephone = document.querySelector("#telephone");
+const telephoneLabel = document.querySelector("#telephone-label");
+const email = document.querySelector("#email");
+const emailLabel = document.querySelector("#email-label");
 
 userName.oninput = () => {
   if (userName.value.length <= 2) {

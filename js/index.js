@@ -48,7 +48,7 @@ electriciteBtn.addEventListener("click", () => {
 
 /* form validations */
 
-const userName = document.getElementById("name");
+const userName = document.querySelector("#name");
 const nameLabel = document.querySelector("#name-label");
 const telephone = document.querySelector("#telephone");
 const telephoneLabel = document.querySelector("#telephone-label");

@@ -137,6 +137,7 @@ form {
   backdrop-filter: blur(2rem);
   border: 0.01rem solid var(--secondary);
   box-shadow: 0.2rem 0.2rem 0.3rem var(--secondary);
+  width: 100%;
 }
 
 form .button {
@@ -149,17 +150,20 @@ form .button {
   flex-direction: column;
   font-size: 1.3rem;
   font-family: "Kola", sans-serif;
+  width: 100%;
 }
 
 .form-field > input {
+  min-width: 16.5rem;
   padding: 0 0.3rem;
   line-height: 1.5rem;
   font-size: 1rem;
   border: 0.1rem solid var(--secondary);
 }
 
-.form-field textarea {
-  padding: 0.4rem;
+.form-field > textarea {
+  min-width: 15rem;
+  padding: 0.3rem;
   font-size: 1rem;
   resize: none;
   border: 0.1rem solid var(--secondary);
